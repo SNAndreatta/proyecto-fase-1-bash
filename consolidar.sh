@@ -7,6 +7,7 @@ while true; do
             nombre=$(basename "$file")
             
             cat "$file" >> "$HOME/EPNro1/salida/$FILENAME.txt"
+            echo "" >> "$HOME/EPNro1/salida/$FILENAME.txt" # Por si el archivo.txt esta mal formateado y se solapan las entradas de los archivos de texto por no terminar en un salto de linea
 
             mv "$file" "$HOME/EPNro1/procesado/"
             
